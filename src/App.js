@@ -2,26 +2,24 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Article from "./components/Article";
 import Footer from "./components/Footer";
-import blog from "./blog";
+import posts from "./blog";
 
 function App() {
-  const postComponents = blog.posts.map((post) => (
+  const articleComponents = posts.map((post) => (
     <Article
       key={post.id}
       title={post.title}
       date={post.date}
       preview={post.preview}
+      minutes={post.minutes}
     />
   ));
 
   return (
     <div className="App">
-      <Header name={blog.name} />
-
-      <About name={blog.name} about={blog.about} avatar={blog.avatar} />
-
-      {postComponents}
-
+      <Header />
+      <About />
+      {articleComponents}
       <Footer />
     </div>
   );
