@@ -1,9 +1,8 @@
-function About(props) {
+function About() {
   return (
-    <div>
-      <img src={props.avatar} alt={props.name} />
-      <p>{props.about}</p>
-    </div>
+    <about>
+      <p>Welcome to my personal blog.</p>
+    </about>
   );
 }
 

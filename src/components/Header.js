@@ -1,5 +1,9 @@
-function Header(props) {
-  return <h1>{props.name}'s Blog</h1>;
+function Header() {
+  return (
+    <header>
+      <h1>My Blog</h1>
+    </header>
+  );
 }
 
 export default Header;

@@ -1,10 +1,9 @@
-function Article(props) {
+function Article() {
   return (
-    <div>
-      <h3>{props.title}</h3>
-      <small>{props.date}</small>
-      <p>{props.preview}</p>
-    </div>
+    <article>
+      <h2>Blog Post Title</h2>
+      <p>This is a sample blog post.</p>
+    </article>
   );
 }
 
